@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<title>Personal Website</title>
+
+<style tpye = "text/css">
+
+.lg{
+position:absolute;
+top: 1%;
+left:1%;
+height:auto;
+min-height: 65px;
+width: 200px;
+background: url('Assets/Logo.png') no-repeat;
+background-size:cover;
+opacity: 0.5;
+}
+.rl{
+position:absolute;
+top: 423%;
+right: 660px;
+height:auto;
+min-height:30px;
+width: 30px;
+cursor: pointer;
+background: url('Assets/f.png') no-repeat;
+background-size: cover;
+}
+
+.Bottom{
+position:absolute;
+top:390%;
+right: 0;
+height:auto;
+min-height: 200px;
+width: 1350px;
+margin:0;
+padding:0;
+Background-color: Black;
+background-size: cover;
+}
+
+.bar1 ul{
+opacity: 0.5;
+background: black;
+list-style:none;
+text-align:Center;
+padding:0;
+margin:0;
+}
+
+.bar1 li{
+display: inline-block;
+}
+
+.bar1 a{
+text-decoration:none;
+display:block;
+width:150px;
+padding:none;
+font-size: 15px;
+font-family:"MV Boli";
+color: Gray;
+transition: 0.4s;
+}
+
+.bar1 a:hover{
+color:White;
+}
+
+.logo img{
+width: 50px;
+height: 50px;
+text-align:Left;
+}
+
+p{
+font-family: "MV Boli";
+font-size: 20px;
+color: white;
+text-align: center;
+}
+
+.a1{
+position:absolute;
+top: 30%;
+right: 930px;
+height:auto;
+min-height:270px;
+width: 270px;
+cursor: pointer;
+background: url('Assets/yggdrasil.jpg') no-repeat;
+background-size: cover;
+}
+
+.a1:hover{
+background-size:110%;
+}
+
+.a1:after{
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+word-wrap:break-word;
+overflow:hidden;
+padding:8px;
+background-color:gray;
+color:white;
+opacity:0;
+content:attr(data);
+transition:0.5s;
+}
+
+.a1:hover:after{
+opacity:0.8;
+top:0;
+padding:8px;
+font-size:25px;
+}
+
+.a2{
+position:absolute;
+top: 30%;
+right: 540px;
+height:auto;
+min-height:270px;
+width: 270px;
+cursor: pointer;
+background: url('Assets/ant.jpg') no-repeat;
+background-size: cover;
+}
+
+.a2:hover{
+background-size:110%;
+}
+
+.a2:after{
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+word-wrap:break-word;
+overflow:hidden;
+padding:8px;
+background-color:gray;
+color:white;
+opacity:0;
+content:attr(data);
+transition:0.5s;
+}
+
+.a2:hover:after{
+opacity:0.8;
+top:0;
+padding:8px;
+font-size:25px;
+}
+
+.a3{
+position:absolute;
+top: 30%;
+right: 140px;
+height:auto;
+min-height:270px;
+width: 270px;
+cursor: pointer;
+background: url('Assets/StrangerStudio.jpg') no-repeat;
+background-size: cover;
+}
+
+.a3:hover{
+background-size:110%;
+}
+
+.a3:after{
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+word-wrap:break-word;
+overflow:hidden;
+padding:8px;
+background-color:gray;
+color:white;
+opacity:0;
+content:attr(data);
+transition:0.5s;
+}
+
+.a3:hover:after{
+opacity:0.8;
+top:0;
+padding:8px;
+font-size:25px;
+}
+
+
+
+.f{
+position:absolute;
+top: 18%;
+right: 930px;
+height:auto;
+min-height:270px;
+width: 270px;
+cursor: pointer;
+background: url('Assets/arkanoid.png') no-repeat;
+background-size: cover;
+}
+
+.f:hover{
+background-size:110%;
+}
+
+.f:after{
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+word-wrap:break-word;
+overflow:hidden;
+padding:8px;
+background-color:gray;
+color:white;
+opacity:0;
+content:attr(data);
+transition:0.5s;
+}
+
+.f:hover:after{
+opacity:0.8;
+top:0;
+padding:8px;
+font-size:25px;
+}
+
+.f1{
+position:absolute;
+top: 18%;
+right: 540px;
+height:auto;
+min-height:270px;
+width: 270px;
+cursor: pointer;
+background: url('Assets/Dodger.png') no-repeat;
+background-size: cover;
+}
+
+.f1:hover{
+background-size:110%;
+}
+
+.f1:after{
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+word-wrap:break-word;
+overflow:hidden;
+padding:8px;
+background-color:gray;
+color:white;
+opacity:0;
+content:attr(data);
+transition:0.5s;
+}
+
+.f1:hover:after{
+opacity:0.8;
+top:0;
+padding:8px;
+font-size:25px;
+}
+
+.f2{
+position:absolute;
+top: 18%;
+right: 140px;
+height:auto;
+min-height:270px;
+width: 270px;
+cursor: pointer;
+background: url('Assets/snake.png') no-repeat;
+background-size: cover;
+}
+
+.f2:hover{
+background-size:110%;
+}
+
+.f2:after{
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+word-wrap:break-word;
+overflow:hidden;
+padding:8px;
+background-color:gray;
+color:white;
+opacity:0;
+content:attr(data);
+transition:0.5s;
+}
+
+.f2:hover:after{
+opacity:0.8;
+top:0;
+padding:8px;
+font-size:25px;
+}
+
+.f3{
+position:absolute;
+top: 60%;
+right: 930px;
+height:auto;
+min-height:270px;
+width: 270px;
+cursor: pointer;
+background: url('Assets/Holiday.png') no-repeat;
+background-size: cover;
+}
+
+.f3:hover{
+background-size:110%;
+}
+
+.f3:after{
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+word-wrap:break-word;
+overflow:hidden;
+padding:8px;
+background-color:gray;
+color:white;
+opacity:0;
+content:attr(data);
+transition:0.5s;
+}
+
+.f3:hover:after{
+opacity:0.8;
+top:0;
+padding:8px;
+font-size:20px;
+}
+
+.f4{
+position:absolute;
+top: 60%;
+right: 540px;
+height:auto;
+min-height:270px;
+width: 270px;
+cursor: pointer;
+background: url('Assets/wolf.png') no-repeat;
+background-size: cover;
+}
+
+.f4:hover{
+background-size:110%;
+}
+
+.f4:after{
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+word-wrap:break-word;
+overflow:hidden;
+padding:8px;
+background-color:gray;
+color:white;
+opacity:0;
+content:attr(data);
+transition:0.5s;
+}
+
+.f4:hover:after{
+opacity:0.8;
+top:0;
+padding:8px;
+font-size:25px;
+}
+
+.f5{
+position:absolute;
+top: 60%;
+right: 140px;
+height:auto;
+min-height:270px;
+width: 270px;
+cursor: pointer;
+background: url('Assets/Outbreak(Logo).png') no-repeat;
+background-size: cover;
+}
+
+.f5:hover{
+background-size:110%;
+}
+
+.f5:after{
+position:absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+word-wrap:break-word;
+overflow:hidden;
+padding:8px;
+background-color:gray;
+color:white;
+opacity:0;
+content:attr(data);
+transition:0.5s;
+}
+
+.f5:hover:after{
+opacity:0.8;
+top:0;
+padding:8px;
+font-size:25px;
+}
+
+.GP{
+position:absolute;
+top:159%;
+right: 0;
+height:auto;
+min-height: 800px;
+width: 1350px;
+background-color: white;
+background-size: cover;
+}
+
+.GP1{
+position:absolute;
+top:292%;
+right: 0;
+height:auto;
+min-height: 500px;
+width: 1350px;
+background-color: white;
+background-size: cover;
+}
+
+.Intro{
+position:absolute;
+top:25%;
+right: 230px;
+height:auto;
+min-height: 350px;
+width: 900px;
+}
+
+.Gallery{
+position:absolute;
+top:105%;
+right: 0;
+height:auto;
+min-height: 350px;
+width: fit;
+margin:0;
+padding:0;
+opacity:1;
+Background-color: Gray;
+background-size: cover;
+}
+
+body{
+margin:0;
+padding:0;
+background: url('Assets/BG.jpg') no-repeat;
+background-size: cover;
+}
+
+.bar ul{
+opacity: 0.5;
+background: black;
+list-style:none;
+text-align:Center;
+padding:0;
+margin:0;
+}
+
+.bar li{
+display: inline-block;
+}
+
+.bar a{
+text-decoration:none;
+display:block;
+width:150px;
+padding:20px;
+color: White;
+font-size: 20px;
+font-family:"MV Boli";
+transition: 0.4s;
+}
+
+.bar a:hover{
+background:white;
+color: black;
+}
+
+</style>
+<head>
+</head>
+<body>
+<header>
+    <nav>
+          <div class = "bar">
+          <ul>
+          <li><div class = "logo"><img src= "Assets/WD1.png"></div></li>
+          <li><a href = "Main.html" >Home</a></li>
+          <li><a href = "About.html" >About</a></li>
+          <li><a href = "Gallery.html" >Gallery</a></li>
+          <li><a href = "Contacts.html" >Contact</a></li>
+         <li><div class = "logo"><img src= "Assets/WD1.png"></div></li>
+          </ul>
+    </nav>
+<div class="lg">
+</div>
+</header>
+<div class = "Intro">
+<p><big><i><b>"My work as a Animation and Game Development Student"</b></i></big></p>
+<p style="color:White; font-family:Source Sans Pro Black; font-size:80px; text-transform: uppercase;">My Accomplishement In My Field </p>
+</div>
+
+<div class = "GP">
+<p style="color:Gray; font-family:MV Boli; font-size:35px;"><i><big><b>Game Projects</b></big></i></p>
+
+<div class="f" data="Arkanoid A Casual Game Created from Forms in Visual Studio C#">
+</div>
+<div class="f1" data="Dodger A Casual Game; your goal is to avoid the Asteroid. Created from Java">
+</div>
+<div class="f2" data="Snake A Casual Game your goal is to eat and avoid the walls Created from Adobe Flash">
+</div>
+
+<div class="f3" data="Lost In Holiday Town A Platformer Game where you play as a pumpkin Man who got lost in Holiday Town; your goal is to find the right door that would lead you to your home, Created in Monogame Visual Studio C#">
+</div>
+<div class="f4" data=" Wolf Pack is A Hack and Slash Platformer Game Your Goal is To Reach The End Defeat the Enemy. Created from MonoGame Visual Studio C#">
+</div>
+<div class="f5" data="Outbreak is a Escape Game where you play as a patient your goal is to reach the exit and avoid the mutant Created from Unity">
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr style="opacity:0.3;">
+
+</div>
+<div class = "GP1">
+<p style="color:Gray; font-family:MV Boli; font-size:35px;"><i><big><b>Other Projects</b></big></i></p>
+
+<div class="a1" data="Yggdrasil Game Design Document in Game Studies">
+</div>
+<div class="a2" data="Ant Venom A Short 3D Video">
+</div>
+<div class="a3" data="Strangers Studio Stop Motion in ITAELEC1(Traditional Animation)">
+</div>
+
+</div>
+
+
+<div class="Bottom">
+<div class = "bar1">
+          <ul>
+          <p style = "Color: White; font-family:MV Boli; font-size: 30px;">Thank's for taking the time to view my Website</p>
+          <li><a href = "Main.html" >Home</a></li>
+          <li><a href = "About.html" >About</a></li>
+          <li><a href = "Gallery.html" >Gallery</a></li>
+          <li><a href = "Contacts.html" >Contact</a></li>
+          </ul>
+<br>
+<p style="font-size: 10px;font-family:MV Boli;color:gray;">2018 Ralph Lauren Roa. All rights reserved</p>
+<br>
+<br>
+<br>
+<br>
+</div>
+</div>
+
+<div class="rl">
+</div>
+
+
+<div class = "Gallery">
+<br>
+<p style="font-size: 40px;font-family:"MV Boli";"><i><b>Im A Dedicated AGD Student</b></i></p>
+<p style="color:Black; font-family:Source Sans Pro Black; font-size:35px; text-transform: uppercase;">Being that I've always taken things fast, there's<br> nothing I can't handle,
+Below you'll find a selection of some of my recent Projects.</p>
+</div>
+
+
+</body>
+</html>
